@@ -12,16 +12,16 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
   <link rel="preload" href="/assets/css/0.styles.bba60c6e.css" as="style">
-  <link rel="preload" href="/assets/js/app.6aba7d48.js" as="script">
+  <link rel="preload" href="/assets/js/app.9e64630c.js" as="script">
   <link rel="preload" href="/assets/js/2.a4db983c.js" as="script">
-  <link rel="preload" href="/assets/js/9.9ad8009a.js" as="script">
-  <link rel="prefetch" href="/assets/js/10.3d49ef87.js">
+  <link rel="preload" href="/assets/js/9.6a557a7a.js" as="script">
+  <link rel="prefetch" href="/assets/js/10.74ba9a8f.js">
   <link rel="prefetch" href="/assets/js/11.8ca4ab1d.js">
   <link rel="prefetch" href="/assets/js/3.bad2d608.js">
-  <link rel="prefetch" href="/assets/js/4.dff7041f.js">
+  <link rel="prefetch" href="/assets/js/4.22757aa8.js">
   <link rel="prefetch" href="/assets/js/5.9a9cbba2.js">
-  <link rel="prefetch" href="/assets/js/6.986b001e.js">
-  <link rel="prefetch" href="/assets/js/7.0943a57c.js">
+  <link rel="prefetch" href="/assets/js/6.33e92e9b.js">
+  <link rel="prefetch" href="/assets/js/7.3ac5e7d2.js">
   <link rel="prefetch" href="/assets/js/8.6ae1a7c2.js">
   <link rel="stylesheet" href="/assets/css/0.styles.bba60c6e.css">
 </head>
@@ -125,65 +125,80 @@
             always;**这个一定要有， 之所以要配置这个是为了避免开发过程你可能会遇到一些跨域问题。</p>
           <h4 id="_6-以上几个步骤，配置基本完成了，接下来可以复制以下内容去测试了："><a href="#_6-以上几个步骤，配置基本完成了，接下来可以复制以下内容去测试了："
               class="header-anchor">#</a> 6. 以上几个步骤，配置基本完成了，接下来可以复制以下内容去测试了：</h4>
-          &lt;!DOCTYPE html&gt;
-          <html>
+          <div class="language-javascript extra-class">
+            <pre class="language-javascript"><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token constant">DOCTYPE</span> html<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>html<span class="token operator">&gt;</span>
 
-          <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-            <title>ArcGIS JavaScript Tutorials: Create a JavaScript starter app</title>
-            <link rel="stylesheet" href="http://localhost:8099/esri/themes/light/main.css">
-            <script src="http://localhost:8099/dojo/dojo.js"></script>
-            <style>
-              html,
-              body,
-              #viewDiv {
-                padding: 0;
-                margin: 0;
-                height: 100%;
-                width: 100%;
-              }
-            </style>
-          </head>
+<span class="token operator">&lt;</span>head<span class="token operator">&gt;</span>
+ <span class="token operator">&lt;</span>meta charset<span class="token operator">=</span><span class="token string">&quot;utf-8&quot;</span><span class="token operator">&gt;</span>
+ <span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token string">&quot;viewport&quot;</span> content<span class="token operator">=</span><span class="token string">&quot;initial-scale=1, maximum-scale=1, user-scalable=no&quot;</span><span class="token operator">&gt;</span>
+ <span class="token operator">&lt;</span>title<span class="token operator">&gt;</span>ArcGIS JavaScript Tutorials<span class="token operator">:</span> Create a JavaScript starter app<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">&gt;</span>
+ <span class="token operator">&lt;</span>link rel<span class="token operator">=</span><span class="token string">&quot;stylesheet&quot;</span> href<span class="token operator">=</span><span class="token string">&quot;http://localhost:8099/esri/themes/light/main.css&quot;</span><span class="token operator">&gt;</span>
+ <span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">&quot;http://localhost:8099/dojo/dojo.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+ <span class="token operator">&lt;</span>style<span class="token operator">&gt;</span>
+   html<span class="token punctuation">,</span>
+   body<span class="token punctuation">,</span>
+   #viewDiv <span class="token punctuation">{</span>
+     padding<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+     margin<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+     height<span class="token operator">:</span> <span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">;</span>
+     width<span class="token operator">:</span> <span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+ <span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">&gt;</span>
 
-          <body>
-            <div id="viewDiv"></div>
-            <script>
-              require([
-      & quot; esri / Map & quot;,
-      & quot; esri / views / MapView & quot;
-    ], function (Map, MapView) {
-& lt; !--beforebegin--& gt;& lt; div class=& quot; language - extra - class& quot;& gt;& lt; !--afterbegin--& gt;& lt; pre & gt;& lt; code & gt; var map = new Map({
-                basemap: & amp; quot; topo- vector & amp; quot;
-              });
+<span class="token operator">&lt;</span>body<span class="token operator">&gt;</span>
+ <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">&quot;viewDiv&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+ <span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+   <span class="token function">require</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+     <span class="token string">&quot;esri/Map&quot;</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;esri/views/MapView&quot;</span>
+   <span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">Map<span class="token punctuation">,</span> MapView</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 
-              var view = new MapView({
-                container: & amp; quot; viewDiv& amp; quot;,
-              map: map,
-                center: [-118.80500, 34.02700], // longitude, latitude
-                  zoom: 13
-  });
-});
-& lt; /code&gt;&lt;/pre & gt;
-& lt; !--beforeend--& gt;& lt; /div&gt;&lt;!--afterend--&gt;  </script>
-          </body>
+     <span class="token keyword">var</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+       basemap<span class="token operator">:</span> <span class="token string">&quot;topo-vector&quot;</span>
+     <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-          </html>
-          然后保存，打开页面，能看到地图说明配置成功，如果没有，多半是一些路径配置问题，仔细检查下。
-          #### 7. 出现字体文件 .woff .woff 访问404：
-          在nginx文件目录下找到mime.types并打开，添加如下内容：
-          application/font-woff woff;
-          application/font-woff2 woff2;
-          #### 8. 访问官网API文档太慢解决：
-          #### 1.
-          下载API参考文档：https://developers.arcgis.com/downloads/apis-and-sdks![在这里插入图片描述](https://img-blog.csdnimg.cn/20191129170103509.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2MzgxMzU5,size_16,color_FFFFFF,t_70)
-          步骤同上解压，nginx添加配置 location /api {
-          alias D:/ArcGISAPIForJS/arcgis_js_v413_sdk/;
-          index install.html;
-          }
-          这样你在浏览器输入localhost：8099/api 就可以访问参考文档了。
-          当然个人对nginx配置了解甚少， 以上只是参考更多nginx配置可以到
-          [link](http://shouce.jb51.net/nginx/left.html)
+     <span class="token keyword">var</span> view <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MapView</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+       container<span class="token operator">:</span> <span class="token string">&quot;viewDiv&quot;</span><span class="token punctuation">,</span>
+       map<span class="token operator">:</span> map<span class="token punctuation">,</span>
+       center<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">118.80500</span><span class="token punctuation">,</span> <span class="token number">34.02700</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// longitude, latitude</span>
+       zoom<span class="token operator">:</span> <span class="token number">13</span>
+     <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">&gt;</span>
+</code></pre>
+          </div>
+          <p>然后保存，打开页面，能看到地图说明配置成功，如果没有，多半是一些路径配置问题，仔细检查下。</p>
+          <h4 id="_7-出现字体文件-woff-woff-访问404："><a href="#_7-出现字体文件-woff-woff-访问404：" class="header-anchor">#</a> 7.
+            出现字体文件 .woff .woff 访问404：</h4>
+          <p>在nginx文件目录下找到mime.types并打开，添加如下内容：
+            application/font-woff woff;
+            application/font-woff2 woff2;</p>
+          <h4 id="_8-访问官网api文档太慢解决："><a href="#_8-访问官网api文档太慢解决：" class="header-anchor">#</a> 8. 访问官网API文档太慢解决：</h4>
+          <h4 id="_1-下载api参考文档：https-developers-arcgis-com-downloads-apis-and-sdks"><a
+              href="#_1-下载api参考文档：https-developers-arcgis-com-downloads-apis-and-sdks" class="header-anchor">#</a> 1.
+            下载API参考文档：https://developers.arcgis.com/downloads/apis-and-sdks<img
+              src="https://img-blog.csdnimg.cn/20191129170103509.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2MzgxMzU5,size_16,color_FFFFFF,t_70"
+              alt="在这里插入图片描述"></h4>
+          <p>步骤同上解压，nginx添加配置 location /api {
+            alias D:/ArcGISAPIForJS/arcgis_js_v413_sdk/;
+            index install.html;
+            }
+            这样你在浏览器输入localhost：8099/api 就可以访问参考文档了。
+            当然个人对nginx配置了解甚少， 以上只是参考更多nginx配置可以到
+            <a href="http://shouce.jb51.net/nginx/left.html" target="_blank" rel="noopener noreferrer">link<svg
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15"
+                height="15" class="icon outbound">
+                <path fill="currentColor"
+                  d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                </path>
+                <polygon fill="currentColor"
+                  points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                </polygon>
+              </svg></a></p>
         </div>
         <footer class="page-edit">
           <!---->
@@ -203,9 +218,9 @@
       <!---->
     </div>
   </div>
-  <script src="/assets/js/app.6aba7d48.js" defer></script>
+  <script src="/assets/js/app.9e64630c.js" defer></script>
   <script src="/assets/js/2.a4db983c.js" defer></script>
-  <script src="/assets/js/9.9ad8009a.js" defer></script>
+  <script src="/assets/js/9.6a557a7a.js" defer></script>
 </body>
 
 </html>
