@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>关于arcgis | 欢迎来到lxp的博客</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.4.0">
+    <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/myblog_test/assets/css/0.styles.35860ebb.css" as="style"><link rel="preload" href="/myblog_test/assets/js/app.acf51980.js" as="script"><link rel="preload" href="/myblog_test/assets/js/2.a4db983c.js" as="script"><link rel="preload" href="/myblog_test/assets/js/9.9ad8009a.js" as="script"><link rel="prefetch" href="/myblog_test/assets/js/10.3d49ef87.js"><link rel="prefetch" href="/myblog_test/assets/js/11.8ca4ab1d.js"><link rel="prefetch" href="/myblog_test/assets/js/3.bad2d608.js"><link rel="prefetch" href="/myblog_test/assets/js/4.dff7041f.js"><link rel="prefetch" href="/myblog_test/assets/js/5.9a9cbba2.js"><link rel="prefetch" href="/myblog_test/assets/js/6.986b001e.js"><link rel="prefetch" href="/myblog_test/assets/js/7.0943a57c.js"><link rel="prefetch" href="/myblog_test/assets/js/8.6ae1a7c2.js">
+    <link rel="stylesheet" href="/myblog_test/assets/css/0.styles.35860ebb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myblog_test/" class="home-link router-link-active"><!----> <span class="site-name">欢迎来到lxp的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myblog_test/guide/" class="nav-link router-link-exact-active router-link-active">
+  Guide
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myblog_test/guide/" class="nav-link router-link-exact-active router-link-active">
+  Guide
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog_test/guide/" class="active sidebar-link">关于arcgis</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/myblog_test/guide/文章收藏.html" class="sidebar-link">收藏文章，欢迎阅读</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="关于arcgis"><a href="#关于arcgis" class="header-anchor">#</a> 关于arcgis</h1> <h1 id="arcgis-api在nginx部署步骤及一些坑"><a href="#arcgis-api在nginx部署步骤及一些坑" class="header-anchor">#</a> arcgis API在nginx部署步骤及一些坑</h1> <h3 id="_1-arcgis-api下载地址："><a href="#_1-arcgis-api下载地址：" class="header-anchor">#</a> 1.  arcgis API下载地址：</h3> <p>链接：<a href="https://developers.arcgis.com/downloads/apis-and-sdks" target="_blank" rel="noopener noreferrer">link<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+可能会让你注册登陆一下</p> <h3 id="_2-api的部署"><a href="#_2-api的部署" class="header-anchor">#</a> 2.  API的部署</h3> <div class="language- extra-class"><pre><code>这里以nginx为例介绍，当然你也可以部署在类似tomcat这类服务器上，    原理
+差不多，这里就不做阐述。
+</code></pre></div><h3 id="_1-解压api文件（例如：-arcgis-js-v413-api-zip）"><a href="#_1-解压api文件（例如：-arcgis-js-v413-api-zip）" class="header-anchor">#</a> 1.  解压API文件（例如： arcgis_js_v413_api.zip）</h3> <h3 id="_2-这里可以参考官方教程：打开解压后的目录，找到install-html-点击打开，可以跟着里面教程走。"><a href="#_2-这里可以参考官方教程：打开解压后的目录，找到install-html-点击打开，可以跟着里面教程走。" class="header-anchor">#</a> 2. 这里可以参考官方教程：打开解压后的目录，找到install.html,点击打开，可以跟着里面教程走。</h3> <h4 id="_3-简单说一下第二步的操作，-在解压后的目录-找到init-js和dojo-js"><a href="#_3-简单说一下第二步的操作，-在解压后的目录-找到init-js和dojo-js" class="header-anchor">#</a> 3. 简单说一下第二步的操作， 在解压后的目录 找到init.js和dojo.js</h4> <p>以我的为例： （在linux上同理）D:\ArcGISAPIForJS\arcgis_js_v413_api\arcgis_js_api\library\4.13\init.js和
+D:\ArcGISAPIForJS\arcgis_js_v413_api\arcgis_js_api\library\4.13\dojo\dojo.js</p> <h4 id="_4-利用编辑器打开这两个文件，查找到-hostname-and-path-to-jsapi-并把它替换成你的ip加端口"><a href="#_4-利用编辑器打开这两个文件，查找到-hostname-and-path-to-jsapi-并把它替换成你的ip加端口" class="header-anchor">#</a> 4. 利用编辑器打开这两个文件，查找到 [HOSTNAME_AND_PATH_TO_JSAPI]并把它替换成你的IP加端口</h4> <p>例如我的：把baseUrl:&quot;http://[HOSTNAME_AND_PATH_TO_JSAPI]/dojo&quot; 改成baseUrl:&quot;http://localhost:8099/dojo&quot;， 注意这个地方我把https改成了http，如果你服务器用的是https，这里就不用改了，  注意要把两个文件都要改了</p> <h4 id="_5-配置nginx"><a href="#_5-配置nginx" class="header-anchor">#</a> 5.  配置nginx</h4> <h5 id="_1-没有nginx可以到这里下载一下：http-nginx-org-en-download-html，-自己按照自己操作系统下载，不做过多介绍"><a href="#_1-没有nginx可以到这里下载一下：http-nginx-org-en-download-html，-自己按照自己操作系统下载，不做过多介绍" class="header-anchor">#</a> 1.  没有nginx可以到这里下载一下：http://nginx.org/en/download.html， 自己按照自己操作系统下载，不做过多介绍</h5> <h5 id="_2-打开nginx下的nginx-conf文件：以下是我的配置可以参考，只需要改下-server下的内容："><a href="#_2-打开nginx下的nginx-conf文件：以下是我的配置可以参考，只需要改下-server下的内容：" class="header-anchor">#</a> 2.  打开nginx下的nginx.conf文件：以下是我的配置可以参考，只需要改下 Server下的内容：<img src="https://img-blog.csdnimg.cn/20191129142629640.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2MzgxMzU5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></h5> <p>一定要注意location的顺序，这个你可以去了解一下nginx配置location的优先级，再次就是 **add_header Access-Control-Allow-Origin * always;**这个一定要有， 之所以要配置这个是为了避免开发过程你可能会遇到一些跨域问题。</p> <h4 id="_6-以上几个步骤，配置基本完成了，接下来可以复制以下内容去测试了："><a href="#_6-以上几个步骤，配置基本完成了，接下来可以复制以下内容去测试了：" class="header-anchor">#</a> 6. 以上几个步骤，配置基本完成了，接下来可以复制以下内容去测试了：</h4>
+ &lt;!DOCTYPE html&gt;
+<html><head><meta charset="utf-8"> <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"> <title>ArcGIS JavaScript Tutorials: Create a JavaScript starter app</title> <link rel="stylesheet" href="http://localhost:8099/esri/themes/light/main.css"> <script src="http://localhost:8099/dojo/dojo.js"></script> <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style></head> <body><div id="viewDiv"></div> <script>
+    require([
+      &quot;esri/Map&quot;,
+      &quot;esri/views/MapView&quot;
+    ], function (Map, MapView) {
+&lt;!--beforebegin--&gt;&lt;div class=&quot;language- extra-class&quot;&gt;&lt;!--afterbegin--&gt;&lt;pre&gt;&lt;code&gt;  var map = new Map({
+    basemap: &amp;quot;topo-vector&amp;quot;
+  });
+
+  var view = new MapView({
+    container: &amp;quot;viewDiv&amp;quot;,
+    map: map,
+    center: [-118.80500, 34.02700], // longitude, latitude
+    zoom: 13
+  });
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!--beforeend--&gt;&lt;/div&gt;&lt;!--afterend--&gt;  </script></body></html>
+然后保存，打开页面，能看到地图说明配置成功，如果没有，多半是一些路径配置问题，仔细检查下。
+#### 7.  出现字体文件 .woff .woff 访问404：
+在nginx文件目录下找到mime.types并打开，添加如下内容：
+ application/font-woff                            woff;
+  application/font-woff2                         woff2;
+#### 8. 访问官网API文档太慢解决：
+####  1.  下载API参考文档：https://developers.arcgis.com/downloads/apis-and-sdks![在这里插入图片描述](https://img-blog.csdnimg.cn/20191129170103509.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2MzgxMzU5,size_16,color_FFFFFF,t_70)
+步骤同上解压，nginx添加配置	location /api {
+            alias   D:/ArcGISAPIForJS/arcgis_js_v413_sdk/;
+            index  install.html;
+        }
+这样你在浏览器输入localhost：8099/api  就可以访问参考文档了。
+当然个人对nginx配置了解甚少， 以上只是参考更多nginx配置可以到
+[link](http://shouce.jb51.net/nginx/left.html)</div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/myblog_test/guide/文章收藏.html">
+        收藏文章，欢迎阅读
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/myblog_test/assets/js/app.acf51980.js" defer></script><script src="/myblog_test/assets/js/2.a4db983c.js" defer></script><script src="/myblog_test/assets/js/9.9ad8009a.js" defer></script>
+  </body>
+</html>
